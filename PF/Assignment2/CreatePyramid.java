@@ -73,11 +73,11 @@ public class CreatePyramid {
 		int row=9,n=5;								//row is used to specify the number of rows in pattern 
 													//n used to specify the number till we want to print 
 		CreatePyramid createPyramid=new CreatePyramid();
-		String input1[]=createPyramid.spaces(row, n);//Get the strings of spaces
-		String input2[]=createPyramid.numbers(row, n);//Get the strings of numbers
-		String output[]=createPyramid.printWholePyramid(input1,input2,row);
+		String space[]=createPyramid.spaces(row, n);//Get the strings of spaces
+		String number[]=createPyramid.numbers(row, n);//Get the strings of numbers
+		String patern[]=createPyramid.printWholePyramid(space,number,row);
 		for(int i=0;i<row;i++){
-			System.out.println(output[i]);
+			System.out.println(patern[i]);
 		}
 
 	}

@@ -52,19 +52,19 @@ public class CreatePatternTest {
 	
 	@Test//Positive Test Case for pyramid
 	public void ptestForfullPatternFunction(){
-		String[] input1=tester.spaces(5, 5);//Get the strings of spaces
-		String[] input2=tester.numbers(5, 5);//Get the strings of numbers
+		String[] space=tester.spaces(5, 5);//Get the strings of spaces
+		String[] number=tester.numbers(5, 5);//Get the strings of numbers
 		String[] expected={"12345"," 1234","  123","   12","    1"};
-		assertArrayEquals(expected, tester.printWholePyramid(input1,input2,5));
+		assertArrayEquals(expected, tester.printWholePyramid(space,number,5));
 		
 	}
 	
 	@Test//Negative Test Case for pyramid
 	public void ntestForfullPatternFunction(){
-		String[] input1=tester.spaces(5, 5);//Get the strings of spaces		
-		String[] input2=tester.numbers(5, 5);//Get the strings of numbers
+		String[] space=tester.spaces(5, 5);//Get the strings of spaces		
+		String[] number=tester.numbers(5, 5);//Get the strings of numbers
 		String[] expected={"12345"," 1234","  123","   12","    12"};
-		assertArrayEquals(expected, tester.printWholePyramid(input1,input2,5));
+		assertArrayEquals(expected, tester.printWholePyramid(space,number,5));
 		
 	}
 	

@@ -55,19 +55,19 @@ import org.junit.Test;
 		
 		@Test//Positive Test Case
 		public void ptestForfullPatternFunction(){
-			String[] input1=tester.spaces(9, 5);//Get the strings of spaces
-			String[] input2=tester.numbers(9, 5);//Get the strings of numbers
+			String[] space=tester.spaces(9, 5);//Get the strings of spaces
+			String[] number=tester.numbers(9, 5);//Get the strings of numbers
 			String[] expected={"    1","   121","  12321"," 1234321","123454321"," 1234321","  12321","   121","    1"};
-			assertArrayEquals(expected, tester.printWholePyramid(input1,input2,9));
+			assertArrayEquals(expected, tester.printWholePyramid(space,number,9));
 			
 		}
 		
 		@Test//Negative Test Case
 		public void ntestForfullPatternFunction(){
-			String[] input1=tester.spaces(9, 5);//Get the strings of spaces
-			String[] input2=tester.numbers(9, 5);//Get the strings of numbers
+			String[] space=tester.spaces(9, 5);//Get the strings of spaces
+			String[] number=tester.numbers(9, 5);//Get the strings of numbers
 			String[] expected={"    1 ","   121","  12321"," 1234321","123454321","    1","   121","  12321"," 1234321"};
-			assertArrayEquals(expected, tester.printWholePyramid(input1,input2,9));
+			assertArrayEquals(expected, tester.printWholePyramid(space,number,9));
 			
 		}
 		

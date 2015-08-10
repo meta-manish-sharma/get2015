@@ -51,11 +51,11 @@ public class CreatePattern {
 		int row=5,n=5;						//row is used to specify the number of rows in pattern 
 											//n used to specify the number till we want to print 
 		CreatePattern pattern=new CreatePattern();
-		String input1[]=pattern.spaces(row, n);//Get the strings of spaces
-		String input2[]=pattern.numbers(row, n);//Get the strings of numbers
-		String output[]=pattern.printWholePyramid(input1,input2,row);
+		String space[]=pattern.spaces(row, n);//Get the strings of spaces
+		String number[]=pattern.numbers(row, n);//Get the strings of numbers
+		String pyramid[]=pattern.printWholePyramid(space,number,row);
 		for(int i=0;i<row;i++){
-			System.out.println(output[i]);
+			System.out.println(pyramid[i]);
 		}	
 	}
 
