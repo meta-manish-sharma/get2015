@@ -1,3 +1,8 @@
+/**
+ * This shows the basic functions of inheritance teacher and 
+ * student class inherits the class person
+ * @author Manish 
+ */
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -170,7 +175,7 @@ public class InheritanceImplementation{
 			
 		
 		} while (iterator2.hasNext());
-
+		sc.close();
 	}
 	
 }
