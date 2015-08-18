@@ -20,7 +20,7 @@ public class Survey {
 	//method calculate the percentage rating 
 	public double[]  getOverAllRating(){	
 		double[] result=new double[5];
-		double a1=0,a2=0,a3=0,a5=0,a4=0;
+		double rating1=0,rating2=0,rating3=0,rating5=0,rating4=0;
 		double counter=0;
 		
 		Iterator<Participant> iterator = ((ArrayList<Participant>) participant)
@@ -30,26 +30,26 @@ public class Survey {
 			counter++;
 			if (pobject.singleChoice.equalsIgnoreCase("1")){
 				
-				a1++;
+				rating1++;
 			}
 			else if(pobject.singleChoice.equalsIgnoreCase("2")){
-				a2++;
+				rating2++;
 			}
 			else if(pobject.singleChoice.equalsIgnoreCase("3")){
-				a3++;
+				rating3++;
 			}
 			else if(pobject.singleChoice.equalsIgnoreCase("4")){
-				a4++;
+				rating4++;
 			}
 			else if(pobject.singleChoice.equalsIgnoreCase("5")){
-				a5++;
+				rating5++;
 			}
 		} 
-		result[0]=(a1/counter)*100;
-		result[1]=(a2/counter)*100;
-		result[2]=(a3/counter)*100;
-		result[3]=(a4/counter)*100;
-		result[4]=(a5/counter)*100;
+		result[0]=(rating1/counter)*100;
+		result[1]=(rating2/counter)*100;
+		result[2]=(rating3/counter)*100;
+		result[3]=(rating4/counter)*100;
+		result[4]=(rating5/counter)*100;
 		return result;
 	}
 
@@ -103,20 +103,20 @@ public class Survey {
 			}
 			System.out.println("\n REPORT OF PARTICIPANT ");
 			int i=1;
-			Iterator<Participant> iterator = ((ArrayList<Participant>) participant)
+			Iterator<Participant> iteratorParticipant = ((ArrayList<Participant>) participant)
 					.iterator();
-			while (iterator.hasNext()) {
-				Participant pobject = iterator.next();
+			while (iteratorParticipant.hasNext()) {
+				Participant pobject = iteratorParticipant.next();
 				System.out.println("\n\nParticipant "+i+"\n");
 				System.out.println("Q."+sSelect.qId+"  "+sSelect.qBody);
-				System.out.println("Answer =" +pobject.singleChoice);
+				System.out.println("Answer = " +pobject.singleChoice);
 				
 				
 				System.out.println(mSelect.qId+"  "+mSelect.qBody);
-				System.out.println("Answer =" +pobject.multiChoice);
+				System.out.println("Answer = " +pobject.multiChoice);
 				
 				System.out.println("Q."+text.qId+"  "+text.qBody);
-				System.out.println("Answer =" +pobject.text);
+				System.out.println("Answer = " +pobject.text);
 				i++;
 		}
 		
