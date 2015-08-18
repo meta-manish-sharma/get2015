@@ -19,41 +19,41 @@ public class CarService {
 	static int totalEarning = 0;
 	
 	public static void totalEarning(){
-		Iterator<Mechanic> iterator1 = ((ArrayList<Mechanic>) mech).iterator();
+		Iterator<Mechanic> mechanicIterator = ((ArrayList<Mechanic>) mech).iterator();
 		do {
-			Mechanic mobject = iterator1.next();
-			if (mobject.avail == 1) {
-				totalEarning += mobject.rate;
-				if (mobject.Mcar.equals("Sedan")) {
+			Mechanic mechanicObject = mechanicIterator.next();
+			if (mechanicObject.avail == 1) {
+				totalEarning += mechanicObject.rate;
+				if (mechanicObject.mechanicCar.equals("Sedan")) {
 					sedan++;
 				}
-				if (mobject.Mcar.equals("SUV")) {
+				if (mechanicObject.mechanicCar.equals("SUV")) {
 					suv++;
 				}
-				if (mobject.Mcar.equals("HatchBack")) {
+				if (mechanicObject.mechanicCar.equals("HatchBack")) {
 					hatchback++;
 				}
 
 			}
-		} while (iterator1.hasNext());
+		} while (mechanicIterator.hasNext());
 
 	}
 
 	public void showAllocation() {
-		Iterator<Car> iterator = ((ArrayList<Car>) car).iterator();
+		Iterator<Car> carIterator = ((ArrayList<Car>) car).iterator();
 		do {
-			Car cobject = iterator.next();
-			String cId = cobject.carId;
-			String mName = cobject.Mname;
-			String cType = cobject.type;
+			Car carObject = carIterator.next();
+			String cId = carObject.carId;
+			String mName = carObject.mechanicName;
+			String cType = carObject.type;
 
 			System.out.println("Car Id--> " + cId + " ( " + cType + " ) "
 					+ " is allocated to Mechanic - " + mName);
 
-		} while (iterator.hasNext());
+		} while (carIterator.hasNext());
 
 	}
-   //Execution Starts from here
+ //Execution Starts from here
 	public static void main(String args[]) {
 		mech.add(new Mechanic("Ravi", "Sedan", 3000, 0));
 		mech.add(new Mechanic("Sonu", "SUV", 5000, 0));
@@ -80,18 +80,18 @@ public class CarService {
 			String Mname = "NOT ALLOCATED";
 			cId = cId + "-" + (++p);
 
-			Iterator<Mechanic> iterator = ((ArrayList<Mechanic>) mech)
+			Iterator<Mechanic> mechanicIterator = ((ArrayList<Mechanic>) mech)
 					.iterator();
 			do {
-				Mechanic mobject = iterator.next();
+				Mechanic mechanicObject = mechanicIterator.next();
 
-				if (mobject.Mcar.equalsIgnoreCase(ctype)
-						&& (mobject.avail == 0)) {
-					Mname = mobject.Mname;
-					mobject.avail = 1;
+				if (mechanicObject.mechanicCar.equalsIgnoreCase(ctype)
+						&& (mechanicObject.avail == 0)) {
+					Mname = mechanicObject.mechanicName;
+					mechanicObject.avail = 1;
 					break;
 				}
-			} while (iterator.hasNext());
+			} while (mechanicIterator.hasNext());
 
 			car.add(new Car(ctype, cId, Mname));
 			System.out
@@ -127,12 +127,12 @@ class Car {
 
 	public String type;
 	public String carId;
-	public String Mname;
+	public String mechanicName;
 
-	public Car(String type, String carId, String Mname) {
+	public Car(String type, String carId, String mechanicName) {
 		this.type = type;
 		this.carId = carId;
-		this.Mname = Mname;
+		this.mechanicName = mechanicName;
 	}
 
 }
@@ -140,14 +140,14 @@ class Car {
 //class have Mechanic Attribute
 class Mechanic {
 
-	public String Mname;
-	public String Mcar;
+	public String mechanicName;
+	public String mechanicCar;
 	public int rate;
 	public int avail;
 
-	public Mechanic(String Mname, String Mcar, int rate, int avail) {
-		this.Mcar = Mcar;
-		this.Mname = Mname;
+	public Mechanic(String mechanicName, String mechanicCar, int rate, int avail) {
+		this.mechanicCar = mechanicCar;
+		this.mechanicName = mechanicName;
 		this.rate = rate;
 		this.avail = avail;
 	}
