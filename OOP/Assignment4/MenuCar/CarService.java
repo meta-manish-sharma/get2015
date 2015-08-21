@@ -12,13 +12,14 @@ public class CarService {
 	//Array list which hold Car Objects
 	public static ArrayList<Car> car ;
 	
-	static int  sedan = 0;
-	static	int  suv = 0;
-	static	 int  hatchback = 0;
-	static	 int totalEarning = 0;
 	
 	//function for calculating the total earning and for each type of car
 	public static int [] totalEarning( ){
+		int  sedan = 0;
+		int  suv = 0;
+		int  hatchback = 0;
+		int totalEarning = 0;
+	
 		int carServiced[]=new int [4];
 		Iterator<Mechanic> mechanicIterator = ((ArrayList<Mechanic>) mech).iterator();
 		do {
