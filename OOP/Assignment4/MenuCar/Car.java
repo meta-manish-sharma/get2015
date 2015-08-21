@@ -1,8 +1,5 @@
 package MenuCar;
 
-/**Car Service System
- *@auther Manish 
- */
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -69,7 +66,7 @@ public class Car {
 			}
 
 		}
-		sc.close();
+		
 		return	car;	
 		
 	}

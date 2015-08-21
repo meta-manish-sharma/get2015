@@ -1,7 +1,4 @@
 package MenuCar;
-/**Car Service System
- *@auther Manish 
- */
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -20,6 +17,7 @@ public class CarService {
 	static	 int  hatchback = 0;
 	static	 int totalEarning = 0;
 	
+	//function for calculating the total earning and for each type of car
 	public static int [] totalEarning( ){
 		int carServiced[]=new int [4];
 		Iterator<Mechanic> mechanicIterator = ((ArrayList<Mechanic>) mech).iterator();
@@ -39,24 +37,53 @@ public class CarService {
 
 			}
 		} while (mechanicIterator.hasNext());
+		
 		carServiced[0]=sedan;
 		carServiced[1]=suv;
 		carServiced[2]=hatchback;
 		carServiced[3]=totalEarning;
+		
 		return carServiced;
 		
+	}
+	
+	//Shows the report of car serviced
+	public void showReportForDay(int [] carServiced){
+		System.out.println("\n\nTotal No. of Sedan Serviced - " + carServiced[0]
+				+ "\n\n" + "Total No. of SUV Serviced - " + carServiced[1] + "\n\n"
+				+ "Total No. of HatchBack Serviced - " + carServiced[2]);
+		
+		System.out.println("\nTotal Earning of the Day was -- " + carServiced[3]
+				+ " Rs");
+	}
+
+	//Shows the car allocation
+	public void displayCarAllocation() {
+		Iterator<Car> carIterator = ((ArrayList<Car>) car).iterator();
+		do {
+			Car carObject = carIterator.next();
+			String cId = carObject.carId;
+			String mName = carObject.mechanicName;
+			String cType = carObject.type;
+
+			System.out.println("Car Id--> " + cId + " ( " + cType + " ) "
+					+ " is allocated to Mechanic - " + mName);
+
+		} while (carIterator.hasNext());
+			
 	}
 
 
 	//Execution Starts from here
 	public static void main(String args[]) {
 		
+		//Creating the Mechanic ArrayList
 		mech=new Mechanic().setMechanic();
-		car=new Car().setCarDetails(mech);
-		new Menu().display(car);
-		int carServiced [] =totalEarning( );
-		new Menu().showReport(carServiced);
 		
+		car=new Car().setCarDetails(mech);
+		
+		//creating the object of SetMenuItem Class to call its Constructor
+		SetMenuItem setMenuItem=new SetMenuItem();
 	}
 
 }

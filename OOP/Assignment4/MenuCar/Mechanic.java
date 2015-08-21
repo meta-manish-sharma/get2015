@@ -1,8 +1,5 @@
 package MenuCar;
 
-/**Car Service System
- *@auther Manish 
- */
 
 import java.util.ArrayList;
 
@@ -10,7 +7,7 @@ import java.util.ArrayList;
 public class Mechanic {
 
 	//Array list which hold Mechanic Objects
-		public  ArrayList<Mechanic> mech = new ArrayList<Mechanic>();
+	public  ArrayList<Mechanic> mech = new ArrayList<Mechanic>();
 	public String mechanicName;
 	public String mechanicCar;
 	public int rate;
@@ -22,9 +19,11 @@ public class Mechanic {
 		this.rate = rate;
 		this.avail = avail;
 	}
+	
 	public Mechanic(){
 		
 	}
+	//setting the mechanic objects in Mechanic ArrayList
 	public  ArrayList<Mechanic> setMechanic(){
 		mech.add(new Mechanic("Ravi", "Sedan", 3000, 0));
 		mech.add(new Mechanic("Sonu", "SUV", 5000, 0));
