@@ -1,13 +1,12 @@
-
 package socialnetwork;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
-*
-* @author Manish
-*/
+ *
+ * @author Manish
+ */
 public class Organisation extends Entity implements Record{
     long phoneNumber;
      ArrayList<String> friends=new ArrayList<String>();

@@ -1,16 +1,15 @@
-
 package socialnetwork;
 
 /**
-*
-* @author Manish
-*/
+ *
+ * @author Manish
+ */
 public class Graph implements Connection{
 
     @Override
     public void addConnection(Entity e1, Entity e2) {
-        e1.friends.add(e2.email);
-        e2.friends.add(e1.email);
+        e1.friends.put(e2.email,e2.email);
+        e2.friends.put(e1.email,e1.email);
         
     
     

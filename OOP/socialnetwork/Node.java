@@ -1,4 +1,3 @@
-
 package socialnetwork;
 
 import java.io.BufferedReader;
@@ -9,17 +8,18 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.StringTokenizer;
 
 /**
-*
-* @author Manish
-*/
+ *
+ * @author Manish
+ */
 public class Node {
-    ArrayList<Entity> personList=new ArrayList<Entity>();
-    ArrayList<Entity> organisation=new ArrayList<Entity>();
-    public  ArrayList<Entity> addNode() throws IOException{
+    HashMap<String,Person> personList=new HashMap<String,Person>();
+    //ArrayList<Entity> organisation=new ArrayList<Entity>();
+    public  HashMap<String,Person> addNode() throws IOException{
         
         try {
 			StringTokenizer stringTokenizer;
@@ -54,7 +54,7 @@ public class Node {
 				
 					person=new Person(phoneNum,email,name);
                                         person.setInterest(interest);
-					personList.add(person);
+					personList.put(email, person);
 				
 				
 				

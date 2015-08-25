@@ -1,9 +1,9 @@
-
 package socialnetwork;
+
 /**
-*
-* @author Manish
-*/
+ *
+ * @author Manish
+ */
 public interface Record {
     
   public void setInterest(String interest);

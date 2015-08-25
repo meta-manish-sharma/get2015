@@ -1,18 +1,17 @@
-
-
 package socialnetwork;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
-*
-* @author Manish
-*/
+ *
+ * @author Manish
+ */
 public class Entity {
     String email;
     String name;
-    ArrayList<String> friends=new ArrayList<String>();
+    HashMap<String,String> friends=new HashMap<String,String>();
     public Entity(String email, String name) {
         this.email = email;
         this.name = name;

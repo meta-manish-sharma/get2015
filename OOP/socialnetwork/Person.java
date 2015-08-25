@@ -1,20 +1,20 @@
-
 package socialnetwork;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 /**
-*
-* @author Manish
-*/
+ *
+ * @author Manish
+ */
 public class Person extends Entity implements Record{
     
     long phoneNumber;
     String interest;
     
-   // Iterator<String> personFriend;
+   
     public Person(long phoneNumber,String email,String name){
         super(email,name);
         this.phoneNumber=phoneNumber;
@@ -45,10 +45,17 @@ public class Person extends Entity implements Record{
     
     public void showFriends(){
     
-    
-      for(String friendName:friends){
-          System.out.println(friendName);
+    if(friends.isEmpty()){
+              System.out.println("Sorry !! You Don't have any friend in your Friend list\n");
+          }
+    else{
+        System.out.println("\nYour Friend List ---");
+        int p=0;
+      for(Map.Entry<String,String>entry:friends.entrySet()){
           
-      }  
+          System.out.println(++p+" "+entry.getKey());
+          
+      }
+    }
     }
 }
