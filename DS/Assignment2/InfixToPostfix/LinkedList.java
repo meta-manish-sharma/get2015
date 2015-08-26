@@ -1,3 +1,5 @@
+package InfixToPostfix;
+
 /**
  * This class implements basic operations of LinkedList class
  * @author Manish
@@ -28,24 +30,32 @@ public class LinkedList {
 	
 	//this method add item at given position in linked list
 	void add(int position, Object item){
+		int count=0;
 		if(position>counter || position<0) {
 			throw new ArrayIndexOutOfBoundsException("Illegal position : " + position);
 		}
 		else {
-				int count=0;
+				 count=0;
 				node = new Node (item);
-				current =start;
-				while(current.next!=null){
-					if(count==position-2) {
-						break;
-					}
-					current=current.next;
-					count++;
+				if(position == 1){
+					current=start;
+					start=node;
+					node.next=current;
 				}
-				node.next=current.next;
-				current.next=node;
-				//current=node;
-				counter++;
+				else {
+						current =start;
+						while(current.next!=null){
+							if(count==position-2) {
+								break;
+							}
+							current=current.next;
+							count++;
+						}
+						node.next=current.next;
+						current.next=node;
+						//current=node;
+						counter++;
+				}
 		}
 	}
 	
@@ -131,7 +141,7 @@ public class LinkedList {
 	//this method reverse the linkedList
 	void reverse(){
 		int i=0;
-		Node previous=null;
+		//Node previous=null;
 		if(start==null){
 			throw new NullPointerException("Link list is empty");
 			}

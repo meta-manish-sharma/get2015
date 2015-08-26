@@ -1,4 +1,10 @@
-
+package InfixToPostfix;
+/**
+ *this class create node for single linkedList 
+ * @author Manish
+ *
+ * @param <T>
+ */
 public class Node <T> {
 	public T nodeValue;
 	public Node <T> next;
