@@ -28,7 +28,7 @@ public class Concordance {
 			if (set == null) {
 				set = new HashSet<Integer>();	//create new set
 			}
-			set.add(i + 1);						//set char index in set
+			set.add(i);						//set char index in set
 			concordance.put(charAt, set);		//put char entry in hashMap
 		}
 		
