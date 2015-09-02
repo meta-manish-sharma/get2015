@@ -40,6 +40,8 @@ public class EmployeeImplement {
 							break;
 							
 				case "2" : System.out.println("-----------Sorted employee by empId-----------\n");
+					    LinkedList list = new LinkedList(employee);
+				            Collections.sort(list,new NameComparator());
 						   for(Object e : employee){
 							   System.out.println(e.toString());
 						   }
