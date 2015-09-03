@@ -41,7 +41,7 @@ public class EmployeeImplement {
 							
 				case "2" : System.out.println("-----------Sorted employee by empId-----------\n");
 					    LinkedList list = new LinkedList(employee);
-				            Collections.sort(list;
+				            Collections.sort(list);
 						   for(Object e : employee){
 							   System.out.println(e.toString());
 						   }
