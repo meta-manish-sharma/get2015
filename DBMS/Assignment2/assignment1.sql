@@ -35,14 +35,11 @@ SELECT catagory, count(*) FROM members GROUP BY catagory;
 SELECT M1.member_nm 
 FROM 
 	members AS M1
-		JOIN 
+		INNER JOIN 
 	members AS M2
 		ON M1.catagory = M2.catagory
 		WHERE M2.member_nm ="manish";		
 
-/*9 Display the status of return book and if returned  then place blank*/		
-
-SELECT bi.issue_dt,bi.accession_no,bi.member_id,ifnull(br.return_dt,"") AS Return_date 
-FROM book_issue bi LEFT OUTER JOIN book_return br ON bi.accession_no=br.accession_no AND bi.member_id=br.member_id ,members m 
-WHERE m.member_id=bi.member_id 
-ORDER BY bi.issue_dt ASC; 
+/*9 Display the status of return book and if not returned then place blank*/		
+SELECT  bi.issue_dt,bi.accession_no,bi.member_id,ifnull(br.return_dt,"") AS Return_date 
+FROM book_issue bi LEFT OUTER JOIN book_return br ON bi.accession_no=br.accession_no AND bi.member_id=br.member_id; 
