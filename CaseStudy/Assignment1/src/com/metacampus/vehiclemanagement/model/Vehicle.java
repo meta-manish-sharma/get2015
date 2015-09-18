@@ -105,7 +105,7 @@ public class Vehicle {
 	@Override
 	public String toString() {
 		
-		return "Make : "+ getMake() + " Model : "+ getModel() + " EngineInCC : "+ getEngineInCC()
+		return " Company name : "+ getMake() + " Model : "+ getModel() + " EngineInCC : "+ getEngineInCC()
 		+" Mileage : "+ getMileage() +" FuelCapacity : "+ getFuelCapacity() +" Price : "+ getPrice()
 		+" RoadTax : "+ getRoadTax();
 	}
