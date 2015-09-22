@@ -1,7 +1,10 @@
 package com.metacampus.vehiclemanagement.model;
 
+import com.metacampus.vehiclemanagement.VehicleException;
+
 public class Vehicle {
 
+	private double vehicleId;
 	private String make;
 	private String model;
 	private int engineInCC;
@@ -9,6 +12,20 @@ public class Vehicle {
 	private int mileage;
 	private float price;
 	private float roadTax;
+	
+	/**
+	 * @return the vehicleId
+	 */
+	public double getVehicleId() {
+		return vehicleId;
+	}
+	
+	/**
+	 * @param vehicleId the vehicleId to set
+	 */
+	public void setVehicleId(double vehicleId) {
+		this.vehicleId = vehicleId;
+	}
 	
 	/**
 	 * @return the mileage
@@ -95,18 +112,46 @@ public class Vehicle {
 		this.roadTax = roadTax;
 	}
 	
-	/**
+	/** 
 	 * @return the on road price
 	 */
 	public float calculateOnRoadPrice() {
 		return getPrice() + getRoadTax();
 	}
 	
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if (obj == null) {
+			try {
+				throw new VehicleException ("Null pointer exception in equals method");
+			} catch (VehicleException e) {
+				e.printStackTrace();
+			}
+		}
+	
+		if(getVehicleId() ==  ((Vehicle) obj).getVehicleId() ) {
+			return true;
+		}
+		else {	
+			return false;
+		}
+	}
+	
+	@Override
+	public int hashCode() {
+		int prime = 31;
+		int result = 1;
+		return  (int) (result*prime +  this.getVehicleId());
+	}
+	
 	@Override
 	public String toString() {
 		
-		return " Company name : "+ getMake() + " Model : "+ getModel() + " EngineInCC : "+ getEngineInCC()
-		+" Mileage : "+ getMileage() +" FuelCapacity : "+ getFuelCapacity() +" Price : "+ getPrice()
-		+" RoadTax : "+ getRoadTax();
+		return "Vehicle Id : " + getVehicleId() + ", Company name : " + getMake() + ", Model : " + getModel() +
+			   ", EngineInCC : " + getEngineInCC() +" Mileage : "+ getMileage() +" FuelCapacity : "+ getFuelCapacity()
+			   +" Price : "+ getPrice() +" RoadTax : "+ getRoadTax();
 	}
+	
 }
