@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>MetaGurukul account</title>
+	</head>
+	<body>
+		<p><b><font color="gray">Metagurukul Account Registration</font> </b></p> 
+		<hr/>
+		<form>
+			<Table>
+				<tr> 
+					<td>Name</td>
+					<td><input type="text" placeholder="First Name" name="firstname" /></td>
+					<td><input type="text" placeholder="Last Name" name="lasttname" /></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						<select>
+							<option selected disabled>-Select One-</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>Birthday</td>
+					<td>
+						<input type="number" placeholder="Month" min="1" max="12" name="month" />
+						<input type="number" placeholder="Day" min="1" max="31" name="day" />
+						<input type="number" placeholder="Year" min="1965" max="2015" name="year" />
+					</td>
+				</tr>
+				<tr>
+					<td>Country</td>
+					<td>
+						<select>
+							<option value="AF">Afghanistan</option>
+							<option value="AX">Åland Islands</option>
+							<option value="AL">Albania</option>
+							<option value="DZ">Algeria</option>
+							<option value="AS">American Samoa</option>
+							<option value="AD">Andorra</option>
+							<option value="AO">Angola</option>
+							<option value="AU">Australia</option>
+							<option value="AT">Austria</option>
+							<option value="BH">Bahrain</option>
+							<option value="BD">Bangladesh</option>
+							<option value="BB">Barbados</option>
+							<option value="BY">Belarus</option>
+							<option value="BE">Belgium</option>
+							<option value="CN">China</option>
+							<option value="CX">Christmas Island</option>
+							<option value="CC">Cocos (Keeling) Islands</option>
+							<option value="CO">Colombia</option>
+							<option value="DK">Denmark</option>
+							<option value="DJ">Djibouti</option>
+							<option value="DM">Dominica</option>
+							<option value="ET">Ethiopia</option>
+							<option value="FK">Falkland Islands (Malvinas)</option>
+							<option value="FO">Faroe Islands</option>
+							<option value="FJ">Fiji</option>
+							<option value="IN">India</option>
+							<option value="ID">Indonesia</option>
+							<option value="IR">Iran, Islamic Republic of</option>
+							<option value="IQ">Iraq</option>
+							<option value="NP">Nepal</option>
+							<option value="PK">Pakistan</option>
+							<option value="TG">Togo</option>
+							<option value="TK">Tokelau</option>
+							<option value="TO">Tonga</option>
+							<option value="TT">Trinidad and Tobago</option>
+							<option value="TN">Tunisia</option>
+							<option value="TR">Turkey</option>
+							<option value="TM">Turkmenistan</option>
+							<option value="TC">Turks and Caicos Islands</option>
+							<option value="TV">Tuvalu</option>
+							<option value="UG">Uganda</option>
+							<option value="UA">Ukraine</option>
+							<option value="AE">United Arab Emirates</option>
+							<option value="GB">United Kingdom</option>
+							<option value="US">United States</option>
+							<option value="UM">United States Minor Outlying Islands</option>
+							<option value="UY">Uruguay</option>
+							<option value="UZ">Uzbekistan</option>
+							<option value="VU">Vanuatu</option>
+							<option value="VE">Venezuela, Bolivarian Republic of</option>
+							<option value="VN">Viet Nam</option>
+							<option value="VG">Virgin Islands, British</option>
+							<option value="VI">Virgin Islands, U.S.</option>
+							<option value="WF">Wallis and Futuna</option>
+							<option value="EH">Western Sahara</option>
+							<option value="YE">Yemen</option>
+							<option value="ZM">Zambia</option>
+							<option value="ZW">Zimbabwe</option>
+						</select>
+					</td>
+				</tr>
+			</Table>
+			<h4>Select an Id and password</h4>
+			<hr/>
+			<Table>
+				<tr>
+					<td>MetaGurukul Id</td>
+					<td><input type="text" name="email"/>@</td>
+					<td>
+						<select>
+							<option selected >metagurukul.com</option>
+							<option value="">gmail.com</option>
+							<option value="">yahoo.com</option>
+						</select>
+					</td>
+					<td><button >Check</button></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td> <input type="password"  name ="psw"  /></td>
+				</tr>
+				<tr>
+					<td>Retype Password:</td>
+					<td> <input type="password"  name ="rpsw"  /></td>
+				</tr>				
+			</Table>
+			<h4>In case you forgot your ID or Password...</h4>
+			<hr/>
+			<Table>
+				<tr>
+					<td>Alternate Email(Optional):</td>
+					<td><input type="email"  name ="email"  /></td>
+				</tr>
+				<tr>
+					<td>Secret Question 1:</td>
+					<td>
+						<select>
+							<option selected disabled >-Select One-</option>
+							<option value="1">What is name of your Best Friend name ?</option>
+							<option value="2">Where did you meet first time with your friend ?</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Your Answer:</td>
+					<td><input type="text"  name ="ans1"  /></td>
+				</tr>
+				<tr>
+					<td>Secret Question 2:</td>
+					<td>
+						<select>
+							<option selected disabled >-Select One-</option>
+							<option value="1">What is your First novel name ?</option>
+							<option value="2">Who is your favourite player ?</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Your Answer:</td>
+					<td><input type="text"  name ="ans2"  /></td>
+				</tr>
+			</Table>	
+			<hr/>
+			<button type="submit" autofocus=autofocus style="width:15rem;border-color:gray"  form="form" value="submit" ><b>Create My Account</b></button>
+		</form>
+	</body>
+</html>	

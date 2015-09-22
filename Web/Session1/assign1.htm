@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FORM</title>
+	</head>
+	<body>
+		<h2>Crate Your Account</h2>
+		<FORM>
+			<Table>
+				<tr>
+					<td>*Email ID&nbsp <input type="text" required name="form" /> </td>
+				</tr>
+				<tr>
+					<td>*Password&nbsp <input type="password" required name="psw" /> </td>
+				</tr>
+				<tr>
+					<td>*Confirm Password&nbsp <input type="password" required name="cpsw" type/> </td>
+				</tr>
+			</Table>
+			<hr/>
+			<p><Font size=5.5><b>Contact Details</b>&nbsp</font> this is where recuriters and employees will contact you for jobs.</p>
+			<Table>
+				<tr>
+					<td>Your Name&nbsp <input type="text" name="name" /></td>
+				</tr>
+				<tr>
+					<td>*Current Location&nbsp 
+						<select name="cityselect">
+							<option selected disabled>Select</option>
+							<option value="jaipur">Jaipur</option>
+							<option value="Delhi">delhi</option>
+							<option value="ahmedabad">ahmedabad</option>
+						</select>
+						<input type="checkbox" name="notIndian">Not from India
+					</td>
+				</tr>
+				<tr>
+					<td>*Mobile&nbsp <input type="text" name="mobile" /></td>
+				</tr>
+			</Table>
+			<p>If you don't have mobile, enter <mark>landline no</mark></p>
+			<hr/>
+			<h2>Current Professional Details</h2>
+			<Table>
+				<tr><td>*Total Experience:&nbsp 
+					<input type="number" placeholder="Select" min="0" max="10" name="yearexperience">
+					Years&nbsp 
+					<input type="number" placeholder="Select" min="0" max="11" name="monthexperience">
+					Months
+					</td>
+				</tr>
+				<tr>
+					<td>*Current Industry :&nbsp
+						<select>
+							<option selected disabled>Select</option>
+							<option value="mining">mining industry</option>
+							<option value="oil">oil industry</option>
+							<option value="paper"> paper industry</option>
+							<option value="hotel">hotel industry</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>*Functional Area:&nbsp
+					<select>
+						<option selected disabled>Select</option>
+						<option value="manager">manager</option>
+						<option value="seniour manager">seniour manager</option>
+						<option value="technical person">technical person</option>
+						<option value="worker">worker</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>*Key Skills:&nbsp 
+						<textarea name="keyskill" placeholder="please enter your area of expertise or speclization" rows="5" cols="60"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>*Resume headline :&nbsp 
+						<textarea name="backgroud" placeholder="Describe your professional backgroud in one line" maxlength="250" cols="60"></textarea>
+					</td>
+				</tr>
+			</Table>
+			<hr>
+			<p><Font size=5.5><b>Education Details</b>&nbsp </font> Please let your areas of study</p>
+			<Table>
+			<tr>
+				<td>*Basic Graduation :&nbsp
+					<select>
+						<option selected disabled>Select</option>
+						<option value="btech">B.tech</option>
+						<option value="barch">B.Arch</option>
+						<option value="ba">B.A.</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>*Post Graduation :&nbsp
+					<select>
+						<option selected disabled>Select</option>
+						<option value="mtech">M.tech</option>
+						<option value="mca">MCA</option>
+						<option value="ma">M.A.</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>*Doctorate/Phd: :&nbsp
+					<select>
+						<option selected disabled>Select</option>
+						<option value="computer">Computer</option>
+						<option value="maths">Maths</option>
+						<option value="physics">Physics</option>
+					</select>
+				</td>
+			</tr>
+			</Table>
+			<hr/>
+			<p><Font size=5.5><b>Upload Resume</b>&nbsp </font> Please upload a detailed resume</p>
+			<Table>
+				<tr>
+					<td> Attach Resume :&nbsp
+						<input type="file" id="uploadfiles"  />
+					</td>
+				</tr>
+			</Table>
+			<hr/>
+			<h2>Mailer and privacy settings</h2>
+			<Table>
+				<tr>
+					<td><input type="checkbox" name="">job Alerts</td>
+					<td><input type="checkbox" name="">Important Notifications</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="">Naukri Fast Forward Emails<img src="download.jpg" width="15" height="15"></img></td>
+					<td><input type="checkbox" name="">Communication with clients(Voice calls or sms)<img src="download.jpg" width="15" height="15"></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="">Naukri Fast Forward Calls/Sms<img src="download.jpg" width="15" height="15"></td>
+					<td><input type="checkbox" name="">Other promotions or Special Offers</td>
+				</tr>
+			</Table>
+			<hr/> 
+			<input type="checkbox" name="">I have read and understood and agree to the <a href="#"  >Terms and Conditions </a> governing the use<br>
+			<button type="submit" autofocus=autofocus style="width:15rem;border-color:yellow"  form="form" value="submit" ><b>Create My Account</b></button>
+		</FORM>
+	</body>
+</html>
