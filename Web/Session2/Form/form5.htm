@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Form</title>
+		<link rel="stylesheet" href="fstyle.css" type="text/css">
+	</head>
+	<body>
+		<form>
+			<header>Submit Your Detail </header>
+			<section>
+				Name &nbsp : &nbsp <input type="textbox" name="username"  required ></input><br/><br/>
+				Email &nbsp :&nbsp <input type="email" name="email"  required ></input><br/><br/>
+				D.O.B &nbsp :&nbsp <input type="date" name="dob"  required ></input><br/><br/>
+				Rank&nbsp Yourself&nbsp Out&nbsp Of&nbsp 10&nbsp in&nbsp Java &nbsp &nbsp 1<input id="java" type="range" min="1" max="10" val="3" name="rank" >10</input><br/><br/>
+				Country Name&nbsp: <input type="text" list="countries" />
+										<datalist id="countries">
+											<option value="Afghanistan">
+											<option value="Albania">
+											<option value="India">
+											<option value="United Kingdom">
+											<option value="United States">
+											<option value="Vanuatu">
+											<option value="Vatican City">
+											<option value="Yemen">
+											<option value="Zambia">
+											<option value="Zimbabwe">
+										</datalist> </input><br/><br/>
+				<label><input type="submit" name="submit" ></input></label>
+			</section>
+		</form>	
+	</body>
+</html>
