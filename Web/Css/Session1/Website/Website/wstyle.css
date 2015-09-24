@@ -2,7 +2,7 @@ body {
     background:#FFFFFF;
 }
 
- header {
+ #header {
     background:#AED1ED;
     height:60px;
     text-align:center;
@@ -11,7 +11,7 @@ body {
     font-weight:bold;
 }
 
- header p {
+ #header p {
 	margin: 0px;
     text-align:center;
     font-size:15px;
@@ -20,53 +20,56 @@ body {
 	padding-bottom:10px;
 }
 
-nav {
+#nav {
 	background:#000080;
 	padding:3px;
 	text-align:left;
 }
 
-nav ul {
+#nav ul {
       margin:0px;
       list-style:none;
 }
 
-nav ul li {
+#nav ul li {
 	display:inline;
 	border:0px solid #f00;
 	margin:0 50px;
 }
 
-nav ul li a {
+#nav ul li a {
 	color:#FFF;
 	text-decoration:none;
 }
 
-nav ul li a:hover {
+#nav ul li a:hover {
 	color:#8B0000;
 	text-decoration:underline;
 }
 
+#container {
+	background:#FFF;
+	height:500px;
+}
 
-
-section {
+#leftNav {
 	width:280px;
 	float:left;
 }
 
-section ul {
+#leftNav ul {
 	list-style:none;
 	margin:20px;
 	padding:3px;
 	border:1px solid #666;
 }
 
-section ul li {
+#leftNav ul li {
 	margin:5px 0;
 	padding-left:10px;
 }
 
-section ul li.services{
+#leftNav ul li.services{
 	font-weight:bold;
 	background:#cce6fc;
 	text-align:center;
@@ -76,7 +79,7 @@ section ul li.services{
 	border:1px solid #999;
 }
 
-section p{
+#leftNav p{
 	position:relative;
 	top:10px;
 	left:5px;
@@ -88,30 +91,29 @@ section p{
 	border:1px solid #999;
 }
 
-aside {
+#inner {
    width:820px;
    height:800px;
-   
+   position:relative;
    left:80px;
    float:left;
 }
 
-aside figure{
-  
+#inner img {
+   position:relative;
    top: 20px;
    float:left;
-  
 }
 
-aside p {
+#inner p {
 	position:relative;
 	top: 40px;
 	font-size:18px;
+    
     float:left;
-	left:30px;
 }
 
-aside label {
+#inner label {
 	position:relative;
 	top: 50px;
 	left: 200px;
@@ -119,27 +121,25 @@ aside label {
     font-weight:bold;
 }
 
-article {
-	position:relative;
+#rightNav {
 	margin:10px;
 	width:350px;
-	float:left;
-	left:60px;
+	float:right;
 }
 
-article ul {
+#rightNav ul {
 	list-style:none;
 	margin:0;
 	padding:3px;
 	border:1px solid #666;
 }
 
-article ul li {
+#rightNav ul li {
 	margin:5px 0;
 	padding-left:10px;
 }
 
-article ul li.branches{
+#rightNav ul li.branches{
 	font-weight:bold;
 	background:#cce6fc;
 	text-align:center;
@@ -149,13 +149,13 @@ article ul li.branches{
 	border:1px solid #999;
 }
 
-footer {
+#footer {
 	clear:both;
     background:#AED1ED;
     height:75px;
 } 
 
-footer ul {
+#footer ul {
 	position:relative;
 	top: 20px;
     left:550px;
@@ -164,23 +164,23 @@ footer ul {
     list-style:none;
 }
 
-footer ul li {
+#footer ul li {
 	display:inline;
 	border:0px solid #f00;
 	margin:0 10px;
 }
 
-footer ul li a {
+#footer ul li a {
 	color:#000080;
 	text-decoration:none;
 }
 
-footer ul li a:hover {
+#footer ul li a:hover {
 	color:#FFF;
 	text-decoration:underline;
 }
 
-footer label {
+#footer label {
 	position:relative;
 	top: 40px;
     left:200px;
