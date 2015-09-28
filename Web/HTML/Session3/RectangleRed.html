@@ -1,0 +1,18 @@
+<!--Draw rectangle on canvas and fill color red into it. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Red Rectangle in canvas</title>
+</head>
+<body>
+  <canvas id = "MyCanvas" width=300 height=200 style="border:5px solid black;">
+  Browser does not support the HTML5 canvas tag.
+  </canvas>
+  <script>
+    var c=document.getElementById("MyCanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="red";
+    ctx.fillRect(50,30,170,150);
+  </script>
+</body>
+</html>
