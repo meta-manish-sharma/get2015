@@ -1,0 +1,64 @@
+#wrapper{
+
+	margin:0 auto;
+	border:1px solid red;
+	width: 900px;
+	height:700px;
+	background-image:url('../image/tree.png'),url('../image/back.png'); 
+	background-position:right bottom,left top;
+	background-repeat:no-repeat,repeat; 
+	background-size:240px, 50px; 
+}
+
+.leaf1{
+	
+	border:1px solid green;	
+	width:140px;
+	height:120px;
+	border-radius:80% 0 80% 0;
+	background-color:#98F175;
+	float: left;
+	margin-left: 270px;
+
+
+}
+
+.leaf2{
+	
+	border:1px solid green;	
+	width:140px;
+	height:120px;
+	border-radius:0 80% 0 80%;
+	background-color:#98F175;
+	float: left;
+
+}
+.leaf3
+	{
+	border:1px solid green;	
+	width:140px;
+	height:120px;
+	border-radius:0 80% 0 80% ;
+	background-color:#98F175;
+	float: left;
+	margin-left: 270px;
+margin-top:200px; 
+
+}
+
+.leaf4
+	{
+	border:1px solid green;	
+	width:140px;
+	height:120px;
+	border-radius:80% 0 80% 0;
+	background-color:#98F175;
+	float: left;
+	margin-top:200px; 
+}
+
+
+.incenter{
+	
+	margin:0 auto;
+}
