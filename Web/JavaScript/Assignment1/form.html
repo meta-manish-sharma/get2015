@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<style>
+			aside{
+				margin: 0 auto;
+				background: #eeeeee;
+				height: 750px;
+				width: 700px;
+				border: thin solid #8e8989;
+				text-align: center;
+			}
+			label{
+				position: relative;
+				float: left;
+				left:32%;
+			}
+			.right{
+				position: relative;
+				float: right;
+				right:25%;
+			}
+		</style>
+		<script type="text/javascript" src="javascript.js" ></script>
+	</head>
+	<body>
+		<aside>
+			<h3>Fill Details</h3>
+			<form id="form" action="#" >
+				<label>First Name:</label><input class="right" id="fname" type="text" ><br><br>
+				
+				<label>Last Name:</label><input class="right" id="lname" type="text" ><br><br>
+				
+				<label>Password:</label><input class="right" id="password" type="password" ><br><br>
+				
+				<label>Re-Password:</label><input class="right" id="rpassword" type="password" style="" ><br><br>
+				
+				<label>Age:</label><input class="right" id="age" type="number" min="18" max="25" step=".1" style="width: 170px;" ><br><br>
+				
+				<label>State:</label>
+				<select class="right" id="state" style="width: 175px;" onchange="selectCity()" >
+				
+				<option  selected="selected" disabled value="null">Select</option>
+				
+				<option value="Rajasthan">Rajasthan</option>
+				
+				<option value="UP">UP</option>
+				
+				<option value="MP">MP</option>
+				
+				<option value="Maharastra">Maharastra</option>
+				</select><br><br>
+				
+				<label>City:</label>
+				<select class="right" id="city" style="width: 175px;" disabled="disabled" >
+				
+				<option  selected="selected" disabled value="null">Select</option>
+				</select><br><br>
+				
+				<label>Address Line1:</label><textarea class="right" id="addressLine1" cols="22" ></textarea><br><br><br>
+				
+				<label><input type="checkbox" id="accept" onchange="selectBox()">&nbsp I accept conditions.</label><br><br>
+				
+				<input type="submit" id="submit" value="Create" disabled="disabled" onclick="validation()">
+			</form>
+		</aside>
+	</body>
+</html>
