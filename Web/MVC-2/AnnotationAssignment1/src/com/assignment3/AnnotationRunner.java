@@ -4,7 +4,7 @@
 package com.assignment3;
 
 /**
- * @author chetna
+ * @author manish
  *
  */
 public class AnnotationRunner {
