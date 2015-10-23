@@ -4,7 +4,7 @@
 package Assignment3;
 
 /**
- * @author Anjita
+ * @author Manish
  * Template abstract class Cricket  
  */
 public abstract class Cricket {

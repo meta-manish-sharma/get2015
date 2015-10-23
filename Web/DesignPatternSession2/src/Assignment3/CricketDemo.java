@@ -4,7 +4,7 @@
 package Assignment3;
 
 /**
- * @author Anjita
+ * @author Manish
  * CricketDemo class demonstrating different cricket play function
  */
 public class CricketDemo {

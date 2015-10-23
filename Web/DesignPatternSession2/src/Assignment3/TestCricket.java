@@ -4,7 +4,7 @@
 package Assignment3;
 
 /**
- * @author Anjita
+ * @author Manish
  * TestCricket class extending Cricket class
  */
 public class TestCricket extends Cricket {

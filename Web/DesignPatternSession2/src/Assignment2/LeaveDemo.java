@@ -6,7 +6,7 @@ package Assignment2;
 import java.util.Scanner;
 
 /**
- * @author Anjita
+ * @author Manish
  *
  */
 public class LeaveDemo {
