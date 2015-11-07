@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Carousel</title>
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/style.css">
+<script src="./javascript/jquery-1.11.3.js"></script>
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container well" style="margin-top:5%;">
+		<div  id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+		
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#mycarousel" data-slide-to="1"></li>
+			<li data-target="#mycarousel" data-slide-to="2"></li>
+			<li data-target="#mycarousel" data-slide-to="3"></li>
+			<li data-target="#mycarousel" data-slide-to="4"></li>
+		</ol>
+		
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="list-box" >
+			<div class="item active">
+				<img src="carouselImage/red_squirrel-1600x900.jpg" alt="Wild Life Image1" width="1150px" height="300px">
+			</div>
+			<div class="item">
+				<img src="carouselImage/passerines-1600x900.jpg" alt="Wild Life Image2" width="1150px" height="300px">
+			</div>
+			<div class="item">
+				<img src="carouselImage/snow_lion-1600x900.jpg" alt="Wild Life Image3" width="1150px" height="300px">
+			</div>
+			<div class="item">
+				<img src="carouselImage/white_horse-1600x900.jpg" alt="Wild Life Image4" width="1150px" height="400px">
+			</div>
+			<div class="item">
+				<img src="carouselImage/beautiful_cheetah-1600x900.jpg" alt="Wild Life Image5" width="1150px" height="400px">
+			</div>
+		</div>
+		
+		<!-- Left and Right Controls      -->
+		<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev" >
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		</a>
+		<a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		</a>  
+	</div>
+		
+		</div>
+</body>
+</html>
